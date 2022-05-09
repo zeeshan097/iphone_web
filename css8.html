@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div p{background-color: tomato;color:yellow; font-size: 4vw;}
+        .div1 > p{background-color: violet;font-size: 4vw;}
+        .div2 + p{background-color: darkblue; font-size: 4vw;color: greenyellow;}
+        .div3 ~ p{background-color:yellow;}
+    </style>
+</head>
+<body>
+    <div class="div">
+    <P>Descendant Selector</P>
+    </div>
+    <P>What is this </P><P>What is this </P>
+
+    <div class="div1">
+        <h2>Descendant Selector</h2>
+        <p>child selector</p>
+        <p>Selector</p>
+        <section> <h1>Selector</h1> </section> 
+    </div>
+
+        <div class="div2">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+          </div>
+          
+          <p>Paragraph 3. After a div.</p>
+          <p>Paragraph 4. After a div.</p>
+    
+
+    
+          <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+            <p>Paragraph 1.</p>
+            <p>sibling selector</p> 
+            <div class="div3">
+            <p>Paragraph 2.</p>
+            </div>
+
+            <p>Paragraph 3.</p>
+            <code>Some code.</code>
+            <p>Paragraph 4.</p>
+
+
+
+
+
+</body>
+</html>
