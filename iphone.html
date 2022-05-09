@@ -1,182 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone-Apple(IN)</title>
     <link rel="icon" href="apple-iconss.png" type="image/gif" sizes="10x10">
-    
+
     <style>
-        .navbar{width:96.4%;background-color: black;overflow: auto;padding-left: 4%;}
-        .navbar a{color: whitesmoke;float: left;padding: 1%;text-decoration: none;width:5%;text-align: center;}
-        .navbar a:hover{color: white;}
-        
-        .downto_nav{width: 96.4%;height: 130px;background-color: rgba(237, 247, 251, 0.644);}
-        .downto_nav a{float: left;overflow: auto;text-decoration: none;}
-        .div1{width: 100%;height: 1000px;background-color: white;}
-        .div2{ position: absolute;padding-top: 40%;padding-left: 130%;width: 100%; transform: translate(-40%,-50%);}
-        .div3{width: 100%; height: 2200px; background-color: white;}
-        
-        .dot {height: 13px;width: 13px;border-radius: 50%;display: inline-block;}
-        
-        div.relative{position: relative;}
-        div.absolute{position:absolute;
-                    right: 45%;
-                    top: 57%;
-                    width: 150px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:larger;
-                    border: 1px solid rgb(226, 225, 225);
-                    opacity: -1;
-                    cursor: pointer;}
-            
-        div.relative1{position: relative;}
-        div.absolute1a{position: absolute;
-                    right: 49%;
-                    top: 35%;
-                    width: 159px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.5vw;
-                    border: 5px solid rgb(226, 225, 225);
-                    opacity:-1;
-                    cursor: pointer;}
-            div.absolute1b{position: absolute;
-                    right: 21%;
-                    top: 35%;
-                    width: 159px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.5vw;
-                    border: 5px solid rgb(226, 225, 225);
-                    opacity:-1;
-                    cursor: pointer;}
+        .navbar {
+            width: 96.4%;
+            background-color: black;
+            overflow: auto;
+            padding-left: 4%;
+        }
+
+        .navbar a {
+            color: whitesmoke;
+            float: left;
+            padding: 1%;
+            text-decoration: none;
+            width: 5%;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            color: white;
+        }
+
+        .downto_nav {
+            width: 96.4%;
+            height: 130px;
+            background-color: rgba(237, 247, 251, 0.644);
+        }
+
+        .downto_nav a {
+            float: left;
+            overflow: auto;
+            text-decoration: none;
+        }
+
+        .div1 {
+            width: 100%;
+            height: 1000px;
+            background-color: white;
+        }
+
+        .div2 {
+            position: absolute;
+            padding-top: 40%;
+            padding-left: 130%;
+            width: 100%;
+            transform: translate(-40%, -50%);
+        }
+
+        .div3 {
+            width: 100%;
+            height: 2200px;
+            background-color: white;
+        }
+
+        .dot {
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        div.relative {
+            position: relative;
+        }
+
+        div.absolute {
+            position: absolute;
+            right: 45%;
+            top: 57%;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            font-size: larger;
+            border: 1px solid rgb(226, 225, 225);
+            opacity: -1;
+            cursor: pointer;
+        }
+
+        div.relative1 {
+            position: relative;
+        }
+
+        div.absolute1a {
+            position: absolute;
+            right: 49%;
+            top: 35%;
+            width: 159px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.5vw;
+            border: 5px solid rgb(226, 225, 225);
+            opacity: -1;
+            cursor: pointer;
+        }
+
+        div.absolute1b {
+            position: absolute;
+            right: 21%;
+            top: 35%;
+            width: 159px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.5vw;
+            border: 5px solid rgb(226, 225, 225);
+            opacity: -1;
+            cursor: pointer;
+        }
 
 
 
 
 
-        div.relative2{position: relative;}
-        div.absolute2{position: absolute;
-                    right: 38%;
-                    top: 63.5%;
-                    width: 160px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.5vw;
-                    border: 1px solid rgb(226, 225, 225);
-                    opacity:-1;
-                    cursor: pointer;}
-                    div.relative{position: relative;}
-       
-        div.relative3{position: relative;}
-        div.absolute3{position:absolute;
-                    right: 69%;
-                    top: 65.5%;
-                    width: 140px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:larger;
-                    border: 1px solid rgb(226, 225, 225);
-                    opacity: -1;
-                    cursor: pointer;}
+        div.relative2 {
+            position: relative;
+        }
 
-        div.relative4{position: relative;}
-        div.absolute4a{position:absolute;
-                    right: 29%;
-                    top: 55%;
-                    width: 140px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:larger;
-                    border: 1px solid rgb(226, 225, 225);
-                    opacity: -1;
-                    cursor: pointer;}
-            div.absolute4b{position:absolute;
-                    right: 18%;
-                    top: 55%;
-                    width: 140px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:larger;
-                    border: 1px solid rgb(226, 225, 225);
-                    opacity: -1;
-                    cursor: pointer;}
+        div.absolute2 {
+            position: absolute;
+            right: 38%;
+            top: 63.5%;
+            width: 160px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.5vw;
+            border: 1px solid rgb(226, 225, 225);
+            opacity: -1;
+            cursor: pointer;
+        }
 
-        
-        div.relative5{position: relative;}
-        div.absolute5a{position:absolute;
-                        right: 35%;
-                        top: 15%;
-                    }
-                div.absolute5b{position:absolute;
-                    right: 50%;
-                    top: 35%;
-                    width: 140px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.8vw;
-                    cursor: pointer;}
-                div.absolute5c{position:absolute;
-                    right: 38%;
-                    top: 35%;
-                    width: 140px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.8vw;
-                    cursor: pointer;}
+        div.relative {
+            position: relative;
+        }
 
-                div.relative6{position: relative;}
-                div.absolute6a{position: absolute;
-                    left:13% ;
-                    top: 30.5%;
-                    width: 130px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.8vw;
-                    opacity: -1;
-                    cursor: pointer;}
-                div.absolute6b{position: absolute;
-                    left: 25%;
-                    top: 30.5%;
-                    width: 130px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.8vw;
-                    opacity: -1;
-                    cursor: pointer;}
-                div.absolute6c{position: absolute;
-                    right: 26%;
-                    top: 30.5%;
-                    width: 130px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.8vw;
-                    opacity: -1;
-                    cursor: pointer;}
-                div.absolute6d{position: absolute;
-                    right: 14%;
-                    top: 30.5%;
-                    width: 130px;
-                    height: 30px;
-                    text-align: center;
-                    font-size:1.8vw;
-                    opacity: -1;
-                    cursor: pointer;}
-                
+        div.relative3 {
+            position: relative;
+        }
+
+        div.absolute3 {
+            position: absolute;
+            right: 69%;
+            top: 65.5%;
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            font-size: larger;
+            border: 1px solid rgb(226, 225, 225);
+            opacity: -1;
+            cursor: pointer;
+        }
+
+        div.relative4 {
+            position: relative;
+        }
+
+        div.absolute4a {
+            position: absolute;
+            right: 29%;
+            top: 55%;
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            font-size: larger;
+            border: 1px solid rgb(226, 225, 225);
+            opacity: -1;
+            cursor: pointer;
+        }
+
+        div.absolute4b {
+            position: absolute;
+            right: 18%;
+            top: 55%;
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            font-size: larger;
+            border: 1px solid rgb(226, 225, 225);
+            opacity: -1;
+            cursor: pointer;
+        }
 
 
-        body{background-color: rgba(128, 128, 128, 0.13);font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        div.relative5 {
+            position: relative;
+        }
+
+        div.absolute5a {
+            position: absolute;
+            right: 35%;
+            top: 15%;
+        }
+
+        div.absolute5b {
+            position: absolute;
+            right: 50%;
+            top: 35%;
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.8vw;
+            cursor: pointer;
+        }
+
+        div.absolute5c {
+            position: absolute;
+            right: 38%;
+            top: 35%;
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.8vw;
+            cursor: pointer;
+        }
+
+        div.relative6 {
+            position: relative;
+        }
+
+        div.absolute6a {
+            position: absolute;
+            left: 13%;
+            top: 30.5%;
+            width: 130px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.8vw;
+            opacity: -1;
+            cursor: pointer;
+        }
+
+        div.absolute6b {
+            position: absolute;
+            left: 25%;
+            top: 30.5%;
+            width: 130px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.8vw;
+            opacity: -1;
+            cursor: pointer;
+        }
+
+        div.absolute6c {
+            position: absolute;
+            right: 26%;
+            top: 30.5%;
+            width: 130px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.8vw;
+            opacity: -1;
+            cursor: pointer;
+        }
+
+        div.absolute6d {
+            position: absolute;
+            right: 14%;
+            top: 30.5%;
+            width: 130px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.8vw;
+            opacity: -1;
+            cursor: pointer;
+        }
 
 
 
+        body {
+            background-color: rgba(128, 128, 128, 0.13);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
     </style>
 
 
 
 </head>
+
 <body>
     <div class="navbar">
         <a href="https://www.apple.com/in/"><img src="apple_logo.jpg" alt="logo" width="40"></a>
@@ -196,214 +303,232 @@
 
 
     <div class="downto_nav" style="width: 100%; display: flex;padding-left: 10px;">
-        
+
         <div style="width: 10%;">
-        <a href="https://www.apple.com/in/iphone-13-pro/"><img style="padding-left: 10px;padding-top: 5px;" src="iphone13_pro.png" alt="iphone-13-pro" width="60">
-            <br>iPhone 13 pro<br>
-            <span style="color:rgb(175, 19, 19);padding-left: 23px;font-size: small;">New</span></a>
+            <a href="https://www.apple.com/in/iphone-13-pro/"><img style="padding-left: 10px;padding-top: 5px;"
+                    src="iphone13_pro.png" alt="iphone-13-pro" width="60">
+                <br>iPhone 13 pro<br>
+                <span style="color:rgb(175, 19, 19);padding-left: 23px;font-size: small;">New</span></a>
         </div>
 
         <div style="width: 10%;">
-        <a href="https://www.apple.com/in/iphone-13/"><img style="padding-top: 12px;padding-right:10px ;" src="iphones_13-removebg-preview.png" alt="iphone_13" width="80" >
-            <br><span style="padding-right: 10px;">&nbsp;&nbsp;iPhone 13</span><br>
-            <span style="color:rgb(175, 19, 19);padding-left: 25px;">New</span></a>
+            <a href="https://www.apple.com/in/iphone-13/"><img style="padding-top: 12px;padding-right:10px ;"
+                    src="iphones_13-removebg-preview.png" alt="iphone_13" width="80">
+                <br><span style="padding-right: 10px;">&nbsp;&nbsp;iPhone 13</span><br>
+                <span style="color:rgb(175, 19, 19);padding-left: 25px;">New</span></a>
         </div>
 
         <div style="width: 10%;">
-            <a href="https://www.apple.com/in/iphone-12/key-features/"><img style="padding-top:14px ;" src="iphone_12-removebg-preview.png" alt="iphone_12" width="65" >
+            <a href="https://www.apple.com/in/iphone-12/key-features/"><img style="padding-top:14px ;"
+                    src="iphone_12-removebg-preview.png" alt="iphone_12" width="65">
                 <br><span style="padding-right: 20px;padding-top: 10px;">&nbsp;&nbsp;iPhone 12</span><br></a>
-            </div>
-
-         <div style="width: 10%;">
-            <a href="https://www.apple.com/in/iphone-se/"><img style="padding-top:14px ;" src="iphone_se-removebg-preview.png" alt="iphone_SE" width="65" >
-                <br><span style="padding-right: 20px;padding-top: 10px;">iPhone SE</span><br></a>
-            </div>
-
-            <div style="width: 10%;">
-                <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_11"><img style="padding-top:14px ;" src="iphone_11.avif" alt="iphone_11" width="65" >
-                    <br><span style="padding-right: 20px;padding-top: 10px;">iPhone 11</span><br></a>
-                </div>
-
-                <div style="width: 10%;">
-                    <a href="https://www.apple.com/in/airpods/"><img style="padding-top:14px ;" src="airpod-removebg-preview.png" alt="airpod" width="65" >
-                        <br><span style="padding-right: 20px;padding-top: 10px;"> &nbsp; AirPod</span><br></a>
-                    </div>
-
-                    <div style="width: 10%;">
-                        <a href="https://www.apple.com/in/airtag/"><img style="padding-top:14px ;" src="airtag-removebg-preview.png" alt="airtag" width="65" >
-                            <br><span style="padding-right: 20px;padding-top: 10px;"> &nbsp; AirTag</span><br></a>
-                        </div>
-
-                        <div style="width: 10%;">
-                            <a href="https://www.apple.com/in/shop/goto/iphone/accessories"><img style="padding-top:14px ;" src="accessories-removebg-preview.png" alt="accessories" width="65" >
-                                <br><span style="padding-right: 5px;padding-top: 10px;"> Accessories</span><br></a>
-                            </div>
-
-                            <div style="width: 10%;">
-                                <a href="https://www.apple.com/in/ios/ios-15/"><img style="padding-top:14px ;" src="ios-removebg-preview.png" alt="ios" width="65" >
-                                    <br><span style="padding-right: 10px;padding-top: 10px;padding-left: 7px;"> &nbsp; ios 15</span><br></a>
-                                </div>
-
-                                <div style="width: 10%;">
-                                    <a href="https://www.apple.com/in/shop/goto/buy_iphone"><img style="padding-top:8px ;" src="shop-removebg-preview.png" alt="Shop iPhone" width="120" >
-                                        <br><span style="padding-left: 10px;">Shop iPhone</span><br></a>
-                                    </div>
-                </div>
-
-
-                <h5 style="text-align: center;">Get No Cost EMI for 12 months with qualifying Credit Cards from most leading banks.
-                   <a style="text-decoration: none;" href="https://www.apple.com/in/shop/goto/ways_to_buy"> ‡ Learn more ></a>
-                </h5>
-
-         <div class="div1">
-                    
-        <div style="text-align: center;padding-top: 8%;">
-                    <strong><a style="font-size: 2vw;">iPhone13Pro</a></strong><br>
-                    <strong> <a style="font-size: 4vw;">Oh.So.Pro</a></strong><br>
-                    <a style="font-size: 1.5vw;">From Rs.119900.00* before trade in</a><br>
-                    <br>
-                    <div>
-                        <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_13_pro">
-                            <img src="buy.png" alt="buy" width="70px">
-                        </a>
-                    </div>
-                    
-                    <div>
-                        <a href="https://www.apple.com/in/iphone-13-pro/">
-                        <img src="learn-more-icon-0.png" alt="learn" width="200px">
-                        </a>
-                    </div>
         </div>
-                
-                    <img style="padding-top: 0.5%;padding-left: 11%;width: 85%;" src="iph13.webp" alt="iphone">
-                 </div>
-                 <br>
+
+        <div style="width: 10%;">
+            <a href="https://www.apple.com/in/iphone-se/"><img style="padding-top:14px ;"
+                    src="iphone_se-removebg-preview.png" alt="iphone_SE" width="65">
+                <br><span style="padding-right: 20px;padding-top: 10px;">iPhone SE</span><br></a>
+        </div>
+
+        <div style="width: 10%;">
+            <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_11"><img style="padding-top:14px ;"
+                    src="iphone_11.avif" alt="iphone_11" width="65">
+                <br><span style="padding-right: 20px;padding-top: 10px;">iPhone 11</span><br></a>
+        </div>
+
+        <div style="width: 10%;">
+            <a href="https://www.apple.com/in/airpods/"><img style="padding-top:14px ;"
+                    src="airpod-removebg-preview.png" alt="airpod" width="65">
+                <br><span style="padding-right: 20px;padding-top: 10px;"> &nbsp; AirPod</span><br></a>
+        </div>
+
+        <div style="width: 10%;">
+            <a href="https://www.apple.com/in/airtag/"><img style="padding-top:14px ;" src="airtag-removebg-preview.png"
+                    alt="airtag" width="65">
+                <br><span style="padding-right: 20px;padding-top: 10px;"> &nbsp; AirTag</span><br></a>
+        </div>
+
+        <div style="width: 10%;">
+            <a href="https://www.apple.com/in/shop/goto/iphone/accessories"><img style="padding-top:14px ;"
+                    src="accessories-removebg-preview.png" alt="accessories" width="65">
+                <br><span style="padding-right: 5px;padding-top: 10px;"> Accessories</span><br></a>
+        </div>
+
+        <div style="width: 10%;">
+            <a href="https://www.apple.com/in/ios/ios-15/"><img style="padding-top:14px ;"
+                    src="ios-removebg-preview.png" alt="ios" width="65">
+                <br><span style="padding-right: 10px;padding-top: 10px;padding-left: 7px;"> &nbsp; ios 15</span><br></a>
+        </div>
+
+        <div style="width: 10%;">
+            <a href="https://www.apple.com/in/shop/goto/buy_iphone"><img style="padding-top:8px ;"
+                    src="shop-removebg-preview.png" alt="Shop iPhone" width="120">
+                <br><span style="padding-left: 10px;">Shop iPhone</span><br></a>
+        </div>
+    </div>
 
 
-                 <section>
-                <div style="background-image: url('superpower.jpeg');background-size: cover;
+    <h5 style="text-align: center;">Get No Cost EMI for 12 months with qualifying Credit Cards from most leading banks.
+        <a style="text-decoration: none;" href="https://www.apple.com/in/shop/goto/ways_to_buy"> ‡ Learn more ></a>
+    </h5>
+
+    <div class="div1">
+
+        <div style="text-align: center;padding-top: 8%;">
+            <strong><a style="font-size: 2vw;">iPhone13Pro</a></strong><br>
+            <strong> <a style="font-size: 4vw;">Oh.So.Pro</a></strong><br>
+            <a style="font-size: 1.5vw;">From Rs.119900.00* before trade in</a><br>
+            <br>
+            <div>
+                <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_13_pro">
+                    <img src="buy.png" alt="buy" width="70px">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.apple.com/in/iphone-13-pro/">
+                    <img src="learn-more-icon-0.png" alt="learn" width="200px">
+                </a>
+            </div>
+        </div>
+
+        <img style="padding-top: 0.5%;padding-left: 11%;width: 85%;" src="iph13.webp" alt="iphone">
+    </div>
+    <br>
+
+
+    <section>
+        <div style="background-image: url('superpower.jpeg');background-size: cover;
                      background-repeat: no-repeat; height: 700px;">
 
-                     <div class="div2">
-                        <div> 
-                        <a style="font-size: 1.5vw; color: white;">From Rs.69900.00* before trade in</a>                
-                        </div>
-                        
-                        <div>
-                            <a href="https://www.apple.com/in/iphone-13-pro/">
-                            <img style="padding-left: 50px;" src="learn-more-icon-0.png" alt="learn" width="200px">
-                            </a>
-                        </div>
-                     </div>
-
+            <div class="div2">
+                <div>
+                    <a style="font-size: 1.5vw; color: white;">From Rs.69900.00* before trade in</a>
                 </div>
 
-                </section>
-                     <br>
+                <div>
+                    <a href="https://www.apple.com/in/iphone-13-pro/">
+                        <img style="padding-left: 50px;" src="learn-more-icon-0.png" alt="learn" width="200px">
+                    </a>
+                </div>
+            </div>
 
- <div class="div3">
-                       <h1 style="text-align: center; font-size: 4vw;padding-top: 08%;"> Which iPhone is right for you? </h1>
-                       
+        </div>
 
-                <div style="display: inline-flex;width: 100%;padding-left: 28px;">
+    </section>
+    <br>
 
-                       <div style="padding-right: 12%;padding-top: 0.3%;">
-                       <img  src="aip13pro-removebg-preview.png" alt="iphone-13-pro" width="179%">
-                        <br><div style="padding-left:75%;width: max-content; ">
-                            &nbsp;
-                        <span class="dot" style="background-color: rgb(189, 215, 248);"></span>
-                        <span class="dot" style="background-color: rgb(236, 236, 236);"></span>
-                        <span class="dot" style="background-color:rgb(255, 249, 214);"></span>
-                        <span class="dot" style="background-color: black;"></span>
-                            </div>
-                            
-                            <br>
-                            <div style="padding-left: 62%; width: 65%;">
-                                <span style="color: red;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                     New</span><br><a style="font-size:x-large;">
-                                    <strong> &nbsp; iPhone13Pro</strong></a><br>
-                                    <a style="font-size:larger ;">The ultimate iPhone.</a>
-                                <br><br><a> &nbsp;&nbsp;&nbsp;&nbsp;From Rs.119900.00*
-                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_13_pro"><img style="width: 72px; " src="buy.png"></a>
-                                    <br>
-                                    <a href="https://www.apple.com/in/iphone-13-pro/"><img style="width: 200px;" src="learn-more-icon-0.png"></a>
-                                </a>
-                                
-                        
-                            </div>
-                       </div>
-                       
-                       
-                       <div style="padding-right: 10%;padding-top: 0.5%;">
-                        <img  src="ip133-removebg-preview.png" alt="iphone-13" width="150%" style="padding-top: 4px;">
-                         <br>
-                         <div style="padding-left: 42%;width: max-content;">
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                         <span class="dot" style="background-color: rgb(16, 166, 180);"></span>
-                         <span class="dot" style="background-color: rgb(189, 215, 248);"></span>
-                         <span class="dot" style="background-color: rgb(236, 236, 236);"></span>
-                         <span class="dot" style="background-color:rgb(255, 249, 214);"></span>
-                         <span class="dot" style="background-color: black;"></span>
-                         <span class="dot" style="background-color: rgb(206, 12, 12);"></span>
-                            
-                         <br>
-                            <div style="padding-top: 10%; width: 100%;text-align: center;">
-                                <span style="color: red;">
-                                     New</span><br><a style="font-size:x-large;">
-                                    <strong>iPhone13</strong></a><br>
-                                    <a style="font-size:1.5vw ;width: max-content;">Total powerhouse.</a>
-                                <br><br><a>From Rs.69900.00*</a>
-                                
-                                <br>
-                                    <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_13"><img style="width: 72px; " src="buy.png"></a>
-                                    <br>
-                                    <a href="https://www.apple.com/in/iphone-13/"><img style="width: 200px;" src="learn-more-icon-0.png"></a>
-                            
-                            </div>
+    <div class="div3">
+        <h1 style="text-align: center; font-size: 4vw;padding-top: 08%;"> Which iPhone is right for you? </h1>
+
+
+        <div style="display: inline-flex;width: 100%;padding-left: 28px;">
+
+            <div style="padding-right: 12%;padding-top: 0.3%;">
+                <img src="aip13pro-removebg-preview.png" alt="iphone-13-pro" width="179%">
+                <br>
+                <div style="padding-left:75%;width: max-content; ">
+                    &nbsp;
+                    <span class="dot" style="background-color: rgb(189, 215, 248);"></span>
+                    <span class="dot" style="background-color: rgb(236, 236, 236);"></span>
+                    <span class="dot" style="background-color:rgb(255, 249, 214);"></span>
+                    <span class="dot" style="background-color: black;"></span>
+                </div>
+
+                <br>
+                <div style="padding-left: 62%; width: 65%;">
+                    <span style="color: red;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        New</span><br><a style="font-size:x-large;">
+                        <strong> &nbsp; iPhone13Pro</strong></a><br>
+                    <a style="font-size:larger ;">The ultimate iPhone.</a>
+                    <br><br><a> &nbsp;&nbsp;&nbsp;&nbsp;From Rs.119900.00*
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_13_pro"><img style="width: 72px; "
+                                src="buy.png"></a>
+                        <br>
+                        <a href="https://www.apple.com/in/iphone-13-pro/"><img style="width: 200px;"
+                                src="learn-more-icon-0.png"></a>
+                    </a>
+
+
+                </div>
+            </div>
+
+
+            <div style="padding-right: 10%;padding-top: 0.5%;">
+                <img src="ip133-removebg-preview.png" alt="iphone-13" width="150%" style="padding-top: 4px;">
+                <br>
+                <div style="padding-left: 42%;width: max-content;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="dot" style="background-color: rgb(16, 166, 180);"></span>
+                    <span class="dot" style="background-color: rgb(189, 215, 248);"></span>
+                    <span class="dot" style="background-color: rgb(236, 236, 236);"></span>
+                    <span class="dot" style="background-color:rgb(255, 249, 214);"></span>
+                    <span class="dot" style="background-color: black;"></span>
+                    <span class="dot" style="background-color: rgb(206, 12, 12);"></span>
+
+                    <br>
+                    <div style="padding-top: 10%; width: 100%;text-align: center;">
+                        <span style="color: red;">
+                            New</span><br><a style="font-size:x-large;">
+                            <strong>iPhone13</strong></a><br>
+                        <a style="font-size:1.5vw ;width: max-content;">Total powerhouse.</a>
+                        <br><br><a>From Rs.69900.00*</a>
+
+                        <br>
+                        <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_13"><img style="width: 72px; "
+                                src="buy.png"></a>
+                        <br>
+                        <a href="https://www.apple.com/in/iphone-13/"><img style="width: 200px;"
+                                src="learn-more-icon-0.png"></a>
 
                     </div>
+
+                </div>
             </div>
 
 
 
 
-                        <div style="padding-right: 10%;padding-top: 1%;">
-                            <img  src="ip12red.png" alt="iphone-12" width="88%" style="padding-top: 4px;">
-                             <br>
-                             <div style="padding-left: 20%;width: max-content;">
-                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                             <span class="dot" style="background-color: rgb(16, 166, 180);"></span>
-                             <span class="dot" style="background-color: rgb(189, 215, 248);"></span>
-                             <span class="dot" style="background-color: rgb(236, 236, 236);"></span>
-                             <span class="dot" style="background-color:rgb(255, 249, 214);"></span>
-                             <span class="dot" style="background-color: black;"></span>
-                             <span class="dot" style="background-color: rgb(206, 12, 12);"></span>
-                                
-                             <br>
-                                <div style="padding-top: 10%; width: 100%;text-align: center;">
-                                    <span style="color: red;">
-                                         New</span><br><a style="font-size:x-large;">
-                                        <strong>iPhone12</strong></a><br>
-                                        <a style="font-size:1.5vw ;width: max-content;">Amazing as ever.</a>
-                                    <br><br><a>From Rs.59900.00*</a>
-                                    
-                                    <br>
-                                    <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_12"><img style="width: 72px; " src="buy.png"></a>
-                                    <br>
-                                    <a href="https://www.apple.com/in/iphone-12/key-features/"><img style="width: 200px;" src="learn-more-icon-0.png"></a>
-                                    
-                                </div>
-    
-                                 </div>
-                            </div>
-                    </div>
-                    <br><br>
+            <div style="padding-right: 10%;padding-top: 1%;">
+                <img src="ip12red.png" alt="iphone-12" width="88%" style="padding-top: 4px;">
+                <br>
+                <div style="padding-left: 20%;width: max-content;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="dot" style="background-color: rgb(16, 166, 180);"></span>
+                    <span class="dot" style="background-color: rgb(189, 215, 248);"></span>
+                    <span class="dot" style="background-color: rgb(236, 236, 236);"></span>
+                    <span class="dot" style="background-color:rgb(255, 249, 214);"></span>
+                    <span class="dot" style="background-color: black;"></span>
+                    <span class="dot" style="background-color: rgb(206, 12, 12);"></span>
 
-            
-            
+                    <br>
+                    <div style="padding-top: 10%; width: 100%;text-align: center;">
+                        <span style="color: red;">
+                            New</span><br><a style="font-size:x-large;">
+                            <strong>iPhone12</strong></a><br>
+                        <a style="font-size:1.5vw ;width: max-content;">Amazing as ever.</a>
+                        <br><br><a>From Rs.59900.00*</a>
+
+                        <br>
+                        <a href="https://www.apple.com/in/shop/goto/buy_iphone/iphone_12"><img style="width: 72px; "
+                                src="buy.png"></a>
+                        <br>
+                        <a href="https://www.apple.com/in/iphone-12/key-features/"><img style="width: 200px;"
+                                src="learn-more-icon-0.png"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+
+
         <div style="display:inline-flex;padding-left: 8%;padding-bottom: 10%; width: 100%;">
-            
+
             <div style="width: 33%;padding-left: 6%;">
                 <img src="sc1.png" alt="screen1"><br><br>
                 <img src="scsm.png" alt="scsm">
@@ -422,506 +547,698 @@
         </div>
 
         <center>
-        <p><a style="font-size:x-large; text-decoration: none;color: blue;" href="https://www.apple.com/in/iphone/compare/">Compare all iPhone models ></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a style="font-size:larger;color: blue;text-decoration: none;" href="https://www.apple.com/in/shop/goto/buy_iphone">Shop iPhone ></a></p>
+            <p><a style="font-size:x-large; text-decoration: none;color: blue;"
+                    href="https://www.apple.com/in/iphone/compare/">Compare all iPhone models ></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="font-size:larger;color: blue;text-decoration: none;"
+                    href="https://www.apple.com/in/shop/goto/buy_iphone">Shop iPhone ></a>
+            </p>
         </center>
 
- </div>
+    </div>
 
 
-                <div style="text-align: center;font-size: 2.5vw;padding: 20px 20px;">
-                    <h1>Ways to Buy iPhone </h1>
-                </div>
+    <div style="text-align: center;font-size: 2.5vw;padding: 20px 20px;">
+        <h1>Ways to Buy iPhone </h1>
+    </div>
 
-                <div>
-                    <div style="background-image: url('white2.jpg');background-size: cover;
+    <div>
+        <div style="background-image: url('white2.jpg');background-size: cover;
                      background-repeat: no-repeat; height: 530px;width: 100%;">
 
-                    <div style="display: inline-flex;">
-                        <div style="padding: 90px 90px;">
-                            <center>
-                               <span style="font-size: 4vw;font-weight: bolder;"> Trade in your<br>
-                                smartphone for credit.</span><br><br><br>
+            <div style="display: inline-flex;">
+                <div style="padding: 90px 90px;">
+                    <center>
+                        <span style="font-size: 4vw;font-weight: bolder;"> Trade in your<br>
+                            smartphone for credit.</span><br><br><br>
 
-                            <p style="font-weight:bold;font-size: 1.54vw;">With Apple Trade In, you can get credit towards a new<br> 
-                            iPhone when you trade in your eligible smartphone.<sup>4</sup><br> 
+                        <p style="font-weight:bold;font-size: 1.54vw;">With Apple Trade In, you can get credit towards a
+                            new<br>
+                            iPhone when you trade in your eligible smartphone.<sup>4</sup><br>
                             Its good for you and the planet.<br>
-                            <a style="text-decoration: none; color: rgb(17, 17, 231);font-size:larger;" 
-                            href="https://www.apple.com/in/shop/goto/trade_in"><br>Learn more ></a>
-                            </p>
-                            
-                            </center>
-                        </div> 
-                     
-                        <img src="ip1333-removebg-preview.png" alt="ip13">
-                    </div>
-                    
-                    </div>
-                </div>
-<br>
-                <div>
-                    <div style="background-image: url('why-removebg-preview.png');background-size: cover;
-                     background-repeat: no-repeat; height: 530px;width: 100%;background-color: white;">
-                        
-                        <p style="padding:8% 32%; text-align: center; width: max-content;">
-                        <a style="font-size: 3.5vw;font-weight: bold;">Why Apple is the best<br>
-                           place to buy iPhone.
-                        </a>
-                           <br><br>
-                           <a style="font-size: 1.4vw;font-weight: 600;">
-                           You can choose a payment option that works for you,<br>
-                           pay less with a trade in, connect your new<br>
-                           iPhone to your carrier and get set up quickly.<br>
-                           You can also chat with a Specialist anytime. 
-                           </a>
-                           <br><br>
-                           <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;" 
-                           href="https://www.apple.com/in/iphone/buy/">Learn more ></a>
+                            <a style="text-decoration: none; color: rgb(17, 17, 231);font-size:larger;"
+                                href="https://www.apple.com/in/shop/goto/trade_in"><br>Learn more ></a>
                         </p>
-                        
-                     </div>
-                </div>
-            <br><br>
-            <div style="text-align: center;font-size: 2.5vw;font-weight: bold;">
-                <h1>Featured accessories </h1>
-                </div>
-            <br><br>
 
-            <div style="background-image: url('white2.jpg');background-size: cover;
+                    </center>
+                </div>
+
+                <img src="ip1333-removebg-preview.png" alt="ip13">
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div>
+        <div style="background-image: url('why-removebg-preview.png');background-size: cover;
+                     background-repeat: no-repeat; height: 530px;width: 100%;background-color: white;">
+
+            <p style="padding:8% 32%; text-align: center; width: max-content;">
+                <a style="font-size: 3.5vw;font-weight: bold;">Why Apple is the best<br>
+                    place to buy iPhone.
+                </a>
+                <br><br>
+                <a style="font-size: 1.4vw;font-weight: 600;">
+                    You can choose a payment option that works for you,<br>
+                    pay less with a trade in, connect your new<br>
+                    iPhone to your carrier and get set up quickly.<br>
+                    You can also chat with a Specialist anytime.
+                </a>
+                <br><br>
+                <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;"
+                    href="https://www.apple.com/in/iphone/buy/">Learn more ></a>
+            </p>
+
+        </div>
+    </div>
+    <br><br>
+    <div style="text-align: center;font-size: 2.5vw;font-weight: bold;">
+        <h1>Featured accessories </h1>
+    </div>
+    <br><br>
+
+    <div style="background-image: url('white2.jpg');background-size: cover;
                      background-repeat: no-repeat; height: 530px;width: 100%;">
 
-                <div style="display:inline-flex;width:100%;">
-                    <div style="width: 40%;">
+        <div style="display:inline-flex;width:100%;">
+            <div style="width: 40%;">
                 <p style="padding:25% 5%; text-align: center;">
                     <a style="font-size: 3.5vw;font-weight: bold;">MagSafe
                     </a>
-                       <br><br>
-                       <a style="font-size: 1.4vw;font-weight: 600;">
+                    <br><br>
+                    <a style="font-size: 1.4vw;font-weight: 600;">
                         Snap on a magnetic case, wallet<br>
-                         or both. And get faster<br>
-                          wireless charging. 
-                       </a>
-                       <br><br>
-                       <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;" 
-                       href="https://www.apple.com/in/shop/goto/accessories/magsafe">Shop MagSafe accessories ></a>
-                    </p>
-                    </div>
-                    <div style="width: 60%;">
-                    <img style="width: 800px; height: 500px;padding-top: 30px;" src="magg.png" alt="magsafe">
-                    </div>
-                </div>    
-
+                        or both. And get faster<br>
+                        wireless charging.
+                    </a>
+                    <br><br>
+                    <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;"
+                        href="https://www.apple.com/in/shop/goto/accessories/magsafe">Shop MagSafe accessories ></a>
+                </p>
             </div>
+            <div style="width: 60%;">
+                <img style="width: 800px; height: 500px;padding-top: 30px;" src="magg.png" alt="magsafe">
+            </div>
+        </div>
 
-            <br><br>
-            <div style="background-image: url('white2.jpg');background-size: cover;
+    </div>
+
+    <br><br>
+    <div style="background-image: url('white2.jpg');background-size: cover;
                      background-repeat: no-repeat; height: 530px;width: 100%;">
 
-                <div style="display:inline-flex;width:100%;">
+        <div style="display:inline-flex;width:100%;">
 
-                    <div style="width: 60%;">
-                        <img style="width: 900px; height: 530px;" src="airtag11.png" alt="airtag">
-                        </div>
-                    <div style="width: 40%;">
+            <div style="width: 60%;">
+                <img style="width: 900px; height: 530px;" src="airtag11.png" alt="airtag">
+            </div>
+            <div style="width: 40%;">
                 <p style="padding:25% 13%; text-align: center;">
                     <a style="font-size: 3.5vw;font-weight: bold;">AirTag </a>
-                       <br><br>
-                       <a style="font-size: 1.4vw;font-weight: 600;">
-                        Attach one to your keys. Slip another in your<br> 
+                    <br><br>
+                    <a style="font-size: 1.4vw;font-weight: 600;">
+                        Attach one to your keys. Slip another in your<br>
                         backpack. Then easily keep track of them in<br>
-                        the Find My app.  
-                       </a>
-                       <br><br>
-                       <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;" 
-                       href="https://www.apple.com/in/shop/goto/buy_airtag/airtag">Buy ></a> &nbsp;&nbsp;
-                       <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;" 
-                       href="https://www.apple.com/in/airtag/">Learn more > </a>
-                    </p>
-                    </div>
-                    
-                </div>    
-
+                        the Find My app.
+                    </a>
+                    <br><br>
+                    <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;"
+                        href="https://www.apple.com/in/shop/goto/buy_airtag/airtag">Buy ></a> &nbsp;&nbsp;
+                    <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;"
+                        href="https://www.apple.com/in/airtag/">Learn more > </a>
+                </p>
             </div>
+
+        </div>
+
+    </div>
 
     <br><br>
 
-                <div style="background-image: url('black1.jpg');background-size: cover;
+    <div style="background-image: url('black1.jpg');background-size: cover;
                      background-repeat: no-repeat;height: 600px; width: 100%;">
-                    
-                    <div style="display: inline-flex; width: 100%;">
 
-                        <div style="width: 33%;">
-                            <img style="width:100%; padding-top: 20%;" src="max5-removebg-preview.png" alt="airpod">
-                            </div>
-                            
+        <div style="display: inline-flex; width: 100%;">
+
+            <div style="width: 33%;">
+                <img style="width:100%; padding-top: 20%;" src="max5-removebg-preview.png" alt="airpod">
+            </div>
 
 
-                    <div style="width:33%;text-align: center; padding-left: 10px; padding-top: 5%;">
-                        <p>
-                            <a style="font-size: 4.5vw;font-weight: bold;color: white;">Airpods </a>
-                               <br><br>
-                               <a style="font-size: 1.4vw;font-weight: 600;color: white;">
-                                Explore all AirPods models and<br>
-                                 find the best ones for you.
-                               </a>
-                               <br><br>
 
-                               <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;" 
-                               href="https://www.apple.com/in/airpods/">Learn more > </a>
-                            </p>
-                        </div>
+            <div style="width:33%;text-align: center; padding-left: 10px; padding-top: 5%;">
+                <p>
+                    <a style="font-size: 4.5vw;font-weight: bold;color: white;">Airpods </a>
+                    <br><br>
+                    <a style="font-size: 1.4vw;font-weight: 600;color: white;">
+                        Explore all AirPods models and<br>
+                        find the best ones for you.
+                    </a>
+                    <br><br>
 
-                    
-                    <div style="width: 50%; padding-top: 15%;padding-right: 5%;">
-                    <img src="airpods1-removebg-preview.png" alt="airpod">
-                    </div>
-                </div>
+                    <a style="text-decoration: none;color: rgb(17, 17, 231);font-size:1.8vw;font-weight: bold;"
+                        href="https://www.apple.com/in/airpods/">Learn more > </a>
+                </p>
+            </div>
+
+
+            <div style="width: 50%; padding-top: 15%;padding-right: 5%;">
+                <img src="airpods1-removebg-preview.png" alt="airpod">
+            </div>
         </div>
+    </div>
 
-<br><br>
-<div>
+    <br><br>
+    <div>
 
         <div>
-        <p style="text-align: center;font-size: 2.5vw;font-weight: bold;">
-            <a style="text-decoration: none;" href="https://www.apple.com/in/shop/goto/iphone/accessories">Shop all iPhone accessories</a> </p>
-        </div>
-        
-    <div style="width: 100%;display: inline-flex; padding-left: 13%;">
-        
-        
-        <div style="width: 33%;">
-            <img style="width: 20%;padding-left: 30px;" src="fdil-removebg-preview.png" alt="FreeDelivery">
-            
-         <p style="font-size: larger;font-weight: 700;padding-left: 17px;">   
-             Free delivery
-        </p>
-              
-         <p> 
-             Buy online and get free<br>
-           &nbsp;&nbsp;  no-contact delivery.
-         </p> 
-              
-         <a style="text-decoration: none;padding-left: 30px;" href="https://www.apple.com/in/shop/goto/shipping_delivery">Learn more ></a>
-            
+            <p style="text-align: center;font-size: 2.5vw;font-weight: bold;">
+                <a style="text-decoration: none;" href="https://www.apple.com/in/shop/goto/iphone/accessories">Shop all
+                    iPhone accessories</a>
+            </p>
         </div>
 
-        
-        
-        <div style="width: 33%;">
-            <div>
-            <img style="width: 20%; padding-left: 7%;"  src="rupee-removebg-preview.png" alt="rupee">
-        
-            <p style="font-size: larger;font-weight: 700; width: max-content;padding-left: 5%">   
-                Ways to Buy 
-           </p>
-                 
-            <p style="padding-right:6%;width: max-content;"> 
-                Choose the way thats right <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 for you. 
-            </p> 
-                 
-            <a style="text-decoration: none;padding-left: 10%;" href="https://www.apple.com/in/shop/goto/shipping_delivery">Learn more ></a>
+        <div style="width: 100%;display: inline-flex; padding-left: 13%;">
+
+
+            <div style="width: 33%;">
+                <img style="width: 20%;padding-left: 30px;" src="fdil-removebg-preview.png" alt="FreeDelivery">
+
+                <p style="font-size: larger;font-weight: 700;padding-left: 17px;">
+                    Free delivery
+                </p>
+
+                <p>
+                    Buy online and get free<br>
+                    &nbsp;&nbsp; no-contact delivery.
+                </p>
+
+                <a style="text-decoration: none;padding-left: 30px;"
+                    href="https://www.apple.com/in/shop/goto/shipping_delivery">Learn more ></a>
+
+            </div>
+
+
+
+            <div style="width: 33%;">
+                <div>
+                    <img style="width: 20%; padding-left: 7%;" src="rupee-removebg-preview.png" alt="rupee">
+
+                    <p style="font-size: larger;font-weight: 700; width: max-content;padding-left: 5%">
+                        Ways to Buy
+                    </p>
+
+                    <p style="padding-right:6%;width: max-content;">
+                        Choose the way thats right <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        for you.
+                    </p>
+
+                    <a style="text-decoration: none;padding-left: 10%;"
+                        href="https://www.apple.com/in/shop/goto/shipping_delivery">Learn more ></a>
+                </div>
+            </div>
+
+
+
+
+
+            <div style="width: 33%;">
+                <img style="width: 20%; padding-left: 10%;" src="help-removebg-preview.png" alt="help">
+                <div>
+                    <p style="font-size: larger;font-weight: 700;text-align: center;padding-right: 60%;">
+                        Get help buying
+                    </p>
+
+                    <p style="text-align: center;padding-right: 80%;width: max-content;">
+                        Have a question? Call a <br>
+                        Specialist or chat online.
+                        <br><br>
+                        Call 000800 040 1966.
+                    </p>
+                    <div>
+                        <a style="text-decoration: none;padding-left: 50px;"
+                            href="https://contactretail.apple.com/?pg=COM:iphone-13&ap=COM&c=in&l=en">Contact us ></a>
+                    </div>
+                    <br><br><br>
+
+                </div>
             </div>
         </div>
 
-
-
-
-
-        <div style="width: 33%;">
-            <img style="width: 20%; padding-left: 10%;" src="help-removebg-preview.png" alt="help">
-            <div>
-            <p style="font-size: larger;font-weight: 700;text-align: center;padding-right: 60%;">   
-                Get help buying  
-           </p>
-                 
-            <p style="text-align: center;padding-right: 80%;width: max-content;"> 
-                Have a question? Call a <br>
-                Specialist or chat online.
-                <br><br>
-                Call 000800 040 1966. 
-            </p> 
-            <div>
-            <a style="text-decoration: none;padding-left: 50px;" href="https://contactretail.apple.com/?pg=COM:iphone-13&ap=COM&c=in&l=en">Contact us ></a>
-            </div>
-            <br><br><br>
-            
+        <div style="text-align: center; font-size: 3vw;font-weight: 800;">
+            <br> <span>What makes an iPhone an iPhone?</span><br><br>
         </div>
     </div>
-    </div>
-
-    <div style="text-align: center; font-size: 3vw;font-weight: 800;">
-   <br> <span>What makes an iPhone an iPhone?</span><br><br>
-    </div>
-</div>
 
 
     <div class="relative">
         <img src="ios 15.png" alt="iod 15" width="100%">
-    <div class="absolute">
-        <a href="https://www.apple.com/in/ios/ios-15/">Learn more ></a>
+        <div class="absolute">
+            <a href="https://www.apple.com/in/ios/ios-15/">Learn more ></a>
+        </div>
     </div>
-    </div>
-<br><br>
-    
+    <br><br>
+
 
     <div style="width: 100%; display: inline-flex;">
-        
+
         <div class="relative1">
-        <img style="height: 650px;" src="privacy.png" alt="privacy" width="100%">
-           
-        <div class="absolute1a">
-            <a href="https://www.apple.com/105/media/in/iphone/switch/2021/de7f5765-e7b8-4cad-8456-53b172755431
+            <img style="height: 650px;" src="privacy.png" alt="privacy" width="100%">
+
+            <div class="absolute1a">
+                <a
+                    href="https://www.apple.com/105/media/in/iphone/switch/2021/de7f5765-e7b8-4cad-8456-53b172755431
             /films/switch-to-iphone-13/16x9/anukriti/iphone-13-switch-to-iphone-13-anukriti-tpl-16x9-in-2021_1280x720h.m3u8">
-                Watch her Film</a>
-        </div>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Watch her Film</a>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="absolute1b">
-                <a href="https://www.apple.com/in/iphone/switch/">Learn more ></a> 
-           </div>
+                <a href="https://www.apple.com/in/iphone/switch/">Learn more ></a>
+            </div>
         </div>
-        
+
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
+
         <div class="relative2">
-        <img style="height: 650px; width: 101%;" src="pvc.png" alt="privacy">
+            <img style="height: 650px; width: 101%;" src="pvc.png" alt="privacy">
             <div class="absolute2">
-               <a href="https://www.apple.com/in/privacy/"> Learn more ></a>
-               </div>
+                <a href="https://www.apple.com/in/privacy/"> Learn more ></a>
+            </div>
         </div>
 
     </div>
 
     <div>
-            <h1 style="padding-top: 8%;text-align: center;font-size:4vw;">Get more out of your iPhone. </h1>
-            <div class="relative3">
-                <img src="virtual.png" alt="virtual" width="100%">
-                <div class="absolute3">
-                    <a href="https://events.apple.com/content/events/retail_nso/in/en/default.html?token
+        <h1 style="padding-top: 8%;text-align: center;font-size:4vw;">Get more out of your iPhone. </h1>
+        <div class="relative3">
+            <img src="virtual.png" alt="virtual" width="100%">
+            <div class="absolute3">
+                <a href="https://events.apple.com/content/events/retail_nso/in/en/default.html?token
                     =xww6uj7woR0X9A3Y9a4MQ0JVdH60MurN7MAvJSY75sHQxWqaTEhMjEmalXqC7MMJuZhb5dvf3_lgN1_
                     GHQWlUFwFtOJMcu-AJLXsio33Ohwb3SiT-ElnFPM6f5vHlF8h&a=1&l=e">Sign up ></a>
-                </div>
             </div>
-                                    <br><br>
-        
+        </div>
+        <br><br>
+
         <div class="relative4">
             <img src="one.png" alt="one" width="100%">
-            
+
             <div style="display: inline-flex;width: 100%;">
-                    <div class="absolute4a" style="width: 10%;">
-                        <a href="https://one.apple.com/in?itscg=10000&itsct=one-NA-iphone-tile-apl-avl-102020">Try it free<sup>5</sup></a>
-                    </div>
-                            
-                    <div class="absolute4b" style="width: 10%;">
-                        <a href="https://www.apple.com/in/apple-one/">Learn more</a>
-                    </div>
-            </div>
-    
-        </div>
-</div>
- <br><br>
-        
-<div>  
-    <div class="relative5">
-            <img src="bblack.webp" alt="black" width="100%">
-        <div class="absolute5a">
-            <img src="blc-removebg-preview.png" alt="blc">
-        </div>
+                <div class="absolute4a" style="width: 10%;">
+                    <a href="https://one.apple.com/in?itscg=10000&itsct=one-NA-iphone-tile-apl-avl-102020">Try it
+                        free<sup>5</sup></a>
+                </div>
 
-        <div style="display: inline-flex;width: 100%;">
-            <div class="absolute5b" style="width: 15%;">
-                <a style="text-decoration: none; color: rgb(139, 139, 255);" href="https://tv.apple.com/in/channel/tvs.sbd.4000?itscg=10000&itsct=atv-0-iph_fp-tle_stm-apl-avl-191111">
-                    Try it free</a>
+                <div class="absolute4b" style="width: 10%;">
+                    <a href="https://www.apple.com/in/apple-one/">Learn more</a>
+                </div>
             </div>
-                    
-            <div class="absolute5c" style="width: 10%;">
-                <a style="text-decoration: none; color:rgb(139, 139, 255) ;" href="https://www.apple.com/in/apple-tv-plus/">Learn more</a>
-            </div>
-         </div>
+
+        </div>
     </div>
+    <br><br>
 
-<div style="height: 650px;">
-        
-        <div class="relative6">
-            <img src="music.png" alt="iphone music" width="100%">
-            
+    <div>
+        <div class="relative5">
+            <img src="bblack.webp" alt="black" width="100%">
+            <div class="absolute5a">
+                <img src="blc-removebg-preview.png" alt="blc">
+            </div>
+
+            <div style="display: inline-flex;width: 100%;">
+                <div class="absolute5b" style="width: 15%;">
+                    <a style="text-decoration: none; color: rgb(139, 139, 255);"
+                        href="https://tv.apple.com/in/channel/tvs.sbd.4000?itscg=10000&itsct=atv-0-iph_fp-tle_stm-apl-avl-191111">
+                        Try it free</a>
+                </div>
+
+                <div class="absolute5c" style="width: 10%;">
+                    <a style="text-decoration: none; color:rgb(139, 139, 255) ;"
+                        href="https://www.apple.com/in/apple-tv-plus/">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 650px;">
+
+            <div class="relative6">
+                <img src="music.png" alt="iphone music" width="100%">
+
                 <div style="display: inline-flex;">
                     <div class="absolute6a">
-                        <a href="https://music.apple.com/deeplink?app=music&p=subscribe&at=1000l4QJ&ct=417&itscg=10000&itsct=417n">Try it free</a>    
+                        <a
+                            href="https://music.apple.com/deeplink?app=music&p=subscribe&at=1000l4QJ&ct=417&itscg=10000&itsct=417n">Try
+                            it free</a>
                     </div>
                     <div class="absolute6b">
                         <a href="https://www.apple.com/in/apple-music/">learn more</a>
                     </div>
 
                     <div class="absolute6c">
-                        <a href="https://apps.apple.com/in/arcade/offers?itscg=10000&itsct=arc-0-iph_fp-promo-apl-offer-191019">Try it free</a>    
+                        <a
+                            href="https://apps.apple.com/in/arcade/offers?itscg=10000&itsct=arc-0-iph_fp-promo-apl-offer-191019">Try
+                            it free</a>
                     </div>
                     <div class="absolute6d">
                         <a href="https://www.apple.com/in/apple-arcade/">learn more</a>
                     </div>
                 </div>
-        </div> 
-</div>
+            </div>
+        </div>
 
-<div style="height: 830px;text-align: justify;margin: 4% 6%;">
-    <p >‡No-Cost EMI available for purchases made using qualifying credit cards on 3, 6 or 12 month tenures only. Offer available on qualifying purchases made after 1:30 PM IST on January 20, 2022 and before 11:59 PM IST on March 24, 2022. Minimum order spend applies as per your credit card’s issuing bank threshold. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Credit card eligibility is subject to terms and conditions between you and your credit card issuing bank. Offer may be revised or withdrawn at any time without any prior notice. Offer valid for limited period. Terms & conditions apply.</p>
-    <p>Representative example: Based off a 12 month tenure. Rs.69900 total cost includes 15% pa and No Cost EMI savings of Rs.5363, paid over 12 months as 12 monthly payments of Rs.5825.</p>
-    <p>*Listed pricing is Maximum Retail Price (inclusive of all taxes).</p>
-    <ol>
-        <li>
-            <p>The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 16.95 centimetres / 6.68 inches (iPhone 13 Pro Max), 15.40 centimetres / 6.06 inches (iPhone 13 Pro, iPhone 13, iPhone 12, iPhone 11), 13.76 centimetres / 5.42 inches (iPhone 13 mini, iPhone 12 mini) or 11.94 cm / 4.7 inches (iPhone SE) diagonally. Actual viewable area is less.</p>
-        </li>
-        <li>
-            <p>Data plan is required. 5G, Gigabit LTE, Gigabit-class LTE, 4G LTE Advanced, 4G LTE, VoLTE and Wi‑Fi calling are available in selected markets and through selected carriers. Speeds are based on theoretical throughput and vary based on site conditions and carrier. For details on 5G and LTE support, contact your carrier and see apple.com/in/iphone/cellular.</p> 
-        </li>
- 
-        <li>
-            <p>All battery claims depend on network configuration and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced by Apple service provider. Battery life and charge cycles vary by use and settings. See apple.com/in/batteries and apple.com/in/iphone/battery.html for more information.</p>
-        </li>
- 
-        <li>
-            <p>rade-in values will vary based on the condition, year and configuration of your trade-in device and is computed on Maximum Retail Price. You must be at least 18 years old to be eligible to trade in for credit. Not all devices are eligible for credit. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply. Credit applied towards your new iPhone will be based on the received device matching the description you provided when your estimate was made and upon validation by the courier. Apple reserves the right to refuse or limit the quantity of any device for any reason.</p> 
-        </li>
-        
-        <li>
-            <p>The Apple One free trial includes only services that you are not currently using through a free trial or a subscription. Plan automatically renews after trial until cancelled. Restrictions and other terms apply.</p>
-        </li>
-        
-        <li>
-            <p>Rs.99/month after free trial. One subscription per Family Sharing group. Offer is valid for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.</p>
-        </li>
- 
-        <li>
-            <p>Rs.99/month after free trial. No commitment. Plan automatically renews after trial until cancelled.</p> 
-        </li>
- 
-        <li>
-            <p>Rs.99/month after free trial. One subscription per Family Sharing group. Offer is valid for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.</p>
-        </li>
-    </ol>
+        <div style="height: 830px;text-align: justify;margin: 4% 6%;">
+            <p>‡No-Cost EMI available for purchases made using qualifying credit cards on 3, 6 or 12 month tenures only.
+                Offer available on qualifying purchases made after 1:30 PM IST on January 20, 2022 and before 11:59 PM
+                IST on March 24, 2022. Minimum order spend applies as per your credit card’s issuing bank threshold.
+                Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing.
+                Credit card eligibility is subject to terms and conditions between you and your credit card issuing
+                bank. Offer may be revised or withdrawn at any time without any prior notice. Offer valid for limited
+                period. Terms & conditions apply.</p>
+            <p>Representative example: Based off a 12 month tenure. Rs.69900 total cost includes 15% pa and No Cost EMI
+                savings of Rs.5363, paid over 12 months as 12 monthly payments of Rs.5825.</p>
+            <p>*Listed pricing is Maximum Retail Price (inclusive of all taxes).</p>
+            <ol>
+                <li>
+                    <p>The display has rounded corners that follow a beautiful curved design, and these corners are
+                        within a standard rectangle. When measured as a standard rectangular shape, the screen is 16.95
+                        centimetres / 6.68 inches (iPhone 13 Pro Max), 15.40 centimetres / 6.06 inches (iPhone 13 Pro,
+                        iPhone 13, iPhone 12, iPhone 11), 13.76 centimetres / 5.42 inches (iPhone 13 mini, iPhone 12
+                        mini) or 11.94 cm / 4.7 inches (iPhone SE) diagonally. Actual viewable area is less.</p>
+                </li>
+                <li>
+                    <p>Data plan is required. 5G, Gigabit LTE, Gigabit-class LTE, 4G LTE Advanced, 4G LTE, VoLTE and
+                        Wi‑Fi calling are available in selected markets and through selected carriers. Speeds are based
+                        on theoretical throughput and vary based on site conditions and carrier. For details on 5G and
+                        LTE support, contact your carrier and see apple.com/in/iphone/cellular.</p>
+                </li>
 
-    <p>Text contained in the Billie Eilish, The Englishman at the Moulin Rouge, Lavender, Golden Retriever and Muscari Wikipedia entries is available under the Creative Commons Attribution-ShareAlike License at http://creativecommons.org/licenses/by-sa/3.0. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a nonprofit organisation.</p>
-    <p>“Desire” written by Pushkar Srivatsal and Tanya Nambiar.</p>
-    <hr>
-</div>
+                <li>
+                    <p>All battery claims depend on network configuration and many other factors; actual results will
+                        vary. Battery has limited recharge cycles and may eventually need to be replaced by Apple
+                        service provider. Battery life and charge cycles vary by use and settings. See
+                        apple.com/in/batteries and apple.com/in/iphone/battery.html for more information.</p>
+                </li>
 
-<div style="height: 530px;">
-    <div style="display: inline-flex;width: 100%;">
-    <a href="https://www.apple.com/in/">
-    <img style="padding-left:50% ;padding-top: 10%; width: 35%;" src="airtag-removebg-preview-removebg-preview1.png" alt="apple">
-    </a>
-    <h2 style="font-size: 2vw;">iPhone</h2>
-    </div>
+                <li>
+                    <p>rade-in values will vary based on the condition, year and configuration of your trade-in device
+                        and is computed on Maximum Retail Price. You must be at least 18 years old to be eligible to
+                        trade in for credit. Not all devices are eligible for credit. More details are available from
+                        Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and
+                        limitations may apply. Credit applied towards your new iPhone will be based on the received
+                        device matching the description you provided when your estimate was made and upon validation by
+                        the courier. Apple reserves the right to refuse or limit the quantity of any device for any
+                        reason.</p>
+                </li>
 
-    <div style="display: inline-flex;padding-left: 15%;">
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;">Shop and Learn</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/store"><li>Store</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/mac/"><li>Mac</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/ipad/"><li>iPad</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/iphone/"><li>iPhone</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/watch/"><li>Watch</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/airpods/"><li>Airpods</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/tv-home/"><li>Tv and Homes</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/ipod-touch/"><li>iPod-touch</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/airtag/"><li>AirTag</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/buy_accessories"><li>Accessories</li></a>        
-        </ul>
-        
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;">Services</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/apple-music/"><li>Apple Music</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/apple-tv-plus/"><li>Apple Tv+</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/apple-arcade/"><li>Apple Arcde</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/icloud/"><li>iCloude</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/apple-one/"><li>Apple One</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/apple-books/"><li>Apple Books</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/apple-podcasts/"><li>Apple Podcasts</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/app-store/"><li>App Store</li></a>
-        </ul>
-        
-        <div>
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;">Apple Store</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/ways_to_buy"><li>Way to Buy</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/trade_in"><li>Apple Trade In</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/recycling/"><li>Recycling Programme</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/order/list"><li>Order Status</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/help"><li>Shopping Help</li></a>
-        </ul>
-        
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;">For Education</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/education/"><li>Apple and Education</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/education/k12/how-to-buy/"><li>Shop For Education</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/educationrouting"><li>Shop For University</li></a>
-        </ul>
-    </div>
+                <li>
+                    <p>The Apple One free trial includes only services that you are not currently using through a free
+                        trial or a subscription. Plan automatically renews after trial until cancelled. Restrictions and
+                        other terms apply.</p>
+                </li>
 
-    <div>
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;"><li>Apple Values</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/accessibility/"><li>Accessibilty</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/environment/"><li>Envionment</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/privacy/"><li>Privacy</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/supplier-responsibility/"><li>Supplier Responsibility</li></a>
-        </ul>
-        
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;">Account</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://appleid.apple.com/in/"><li>Manage your Apple ID</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/account"><li>Apple store Account</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.icloud.com/"><li>iCloude.com</li></a>
-        </ul>
-        
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;">For Business</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/business/"><li>Apple and Bussiness</li></a>
-        </ul>
-        
-    </div>
+                <li>
+                    <p>Rs.99/month after free trial. One subscription per Family Sharing group. Offer is valid for 3
+                        months after eligible device activation. Plan automatically renews until cancelled. Restrictions
+                        and other terms apply.</p>
+                </li>
 
-    <div>
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;">For Healthcare</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/healthcare/"><li>Apple In Healthcare</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/healthcare/apple-watch/"><li>Health On Apple Watch</li></a>
-        </ul>
-        
-        <ul style="list-style-type: none;">
-            <li style="font-weight: bold;"><li>About Apple</li>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/newsroom/"><li>Newsroom</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/leadership/"><li>Apple Leadership</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/careers/in/"><li>Career Opportunities</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://investor.apple.com/"><li>Investor</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/compliance/"><li>Ethics Complaince</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/apple-events/"><li>Events</li></a>
-            <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/contact/"><li>Contact Apple</li></a>
-        </ul>
-    </div>
-    
-    </div>
+                <li>
+                    <p>Rs.99/month after free trial. No commitment. Plan automatically renews after trial until
+                        cancelled.</p>
+                </li>
+
+                <li>
+                    <p>Rs.99/month after free trial. One subscription per Family Sharing group. Offer is valid for 3
+                        months after eligible device activation. Plan automatically renews until cancelled. Restrictions
+                        and other terms apply.</p>
+                </li>
+            </ol>
+
+            <p>Text contained in the Billie Eilish, The Englishman at the Moulin Rouge, Lavender, Golden Retriever and
+                Muscari Wikipedia entries is available under the Creative Commons Attribution-ShareAlike License at
+                http://creativecommons.org/licenses/by-sa/3.0. Wikipedia® is a registered trademark of the Wikimedia
+                Foundation, Inc., a nonprofit organisation.</p>
+            <p>“Desire” written by Pushkar Srivatsal and Tanya Nambiar.</p>
+            <hr>
+        </div>
+
+        <div style="height: 530px;">
+            <div style="display: inline-flex;width: 100%;">
+                <a href="https://www.apple.com/in/">
+                    <img style="padding-left:50% ;padding-top: 10%; width: 35%;"
+                        src="airtag-removebg-preview-removebg-preview1.png" alt="apple">
+                </a>
+                <h2 style="font-size: 2vw;">iPhone</h2>
+            </div>
+
+            <div style="display: inline-flex;padding-left: 15%;">
+                <ul style="list-style-type: none;">
+                    <li style="font-weight: bold;">Shop and Learn</li>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/shop/goto/store">
+                        <li>Store</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/mac/">
+                        <li>Mac</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/ipad/">
+                        <li>iPad</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/iphone/">
+                        <li>iPhone</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/watch/">
+                        <li>Watch</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/airpods/">
+                        <li>Airpods</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/tv-home/">
+                        <li>Tv and Homes</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/ipod-touch/">
+                        <li>iPod-touch</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/airtag/">
+                        <li>AirTag</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/shop/goto/buy_accessories">
+                        <li>Accessories</li>
+                    </a>
+                </ul>
+
+                <ul style="list-style-type: none;">
+                    <li style="font-weight: bold;">Services</li>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/apple-music/">
+                        <li>Apple Music</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/apple-tv-plus/">
+                        <li>Apple Tv+</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/apple-arcade/">
+                        <li>Apple Arcde</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/icloud/">
+                        <li>iCloude</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/apple-one/">
+                        <li>Apple One</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/apple-books/">
+                        <li>Apple Books</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/apple-podcasts/">
+                        <li>Apple Podcasts</li>
+                    </a>
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/app-store/">
+                        <li>App Store</li>
+                    </a>
+                </ul>
+
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li style="font-weight: bold;">Apple Store</li>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/shop/goto/ways_to_buy">
+                            <li>Way to Buy</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/shop/goto/trade_in">
+                            <li>Apple Trade In</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/recycling/">
+                            <li>Recycling Programme</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/shop/goto/order/list">
+                            <li>Order Status</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/shop/goto/help">
+                            <li>Shopping Help</li>
+                        </a>
+                    </ul>
+
+                    <ul style="list-style-type: none;">
+                        <li style="font-weight: bold;">For Education</li>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/education/">
+                            <li>Apple and Education</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/education/k12/how-to-buy/">
+                            <li>Shop For Education</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/shop/goto/educationrouting">
+                            <li>Shop For University</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li style="font-weight: bold;">
+                        <li>Apple Values</li>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/accessibility/">
+                            <li>Accessibilty</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/environment/">
+                            <li>Envionment</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/privacy/">
+                            <li>Privacy</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/supplier-responsibility/">
+                            <li>Supplier Responsibility</li>
+                        </a>
+                    </ul>
+
+                    <ul style="list-style-type: none;">
+                        <li style="font-weight: bold;">Account</li>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://appleid.apple.com/in/">
+                            <li>Manage your Apple ID</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/shop/goto/account">
+                            <li>Apple store Account</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.icloud.com/">
+                            <li>iCloude.com</li>
+                        </a>
+                    </ul>
+
+                    <ul style="list-style-type: none;">
+                        <li style="font-weight: bold;">For Business</li>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/business/">
+                            <li>Apple and Bussiness</li>
+                        </a>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li style="font-weight: bold;">For Healthcare</li>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/healthcare/">
+                            <li>Apple In Healthcare</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/healthcare/apple-watch/">
+                            <li>Health On Apple Watch</li>
+                        </a>
+                    </ul>
+
+                    <ul style="list-style-type: none;">
+                        <li style="font-weight: bold;">
+                        <li>About Apple</li>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/newsroom/">
+                            <li>Newsroom</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/leadership/">
+                            <li>Apple Leadership</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/careers/in/">
+                            <li>Career Opportunities</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://investor.apple.com/">
+                            <li>Investor</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/compliance/">
+                            <li>Ethics Complaince</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/apple-events/">
+                            <li>Events</li>
+                        </a>
+                        <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                            href="https://www.apple.com/in/contact/">
+                            <li>Contact Apple</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
 
 
-    <p style="padding-left: 18%;padding-top: 2%;">More ways to shop:<a style="text-decoration: none;" href="https://locate.apple.com/in/en/"> Find a retailer</a> near you. 
-        Or call 000800 040 1966.</p>
-      <hr style="width: 90%;">
+            <p style="padding-left: 18%;padding-top: 2%;">More ways to shop:<a style="text-decoration: none;"
+                    href="https://locate.apple.com/in/en/"> Find a retailer</a> near you.
+                Or call 000800 040 1966.</p>
+            <hr style="width: 90%;">
 
-    <div style="display: inline-flex;width: 100%;padding-left: 5%;">
-      <p style="font-size: 1vw;width: 30%;">Copyright © 2022 Apple Inc. All rights reserved.</p>  
+            <div style="display: inline-flex;width: 100%;padding-left: 5%;">
+                <p style="font-size: 1vw;width: 30%;">Copyright © 2022 Apple Inc. All rights reserved.</p>
 
-      <ul style="display: inline-flex;font-size:1vw;list-style-type: none;width: 100%;">
-          <a style="text-decoration: none; color: rgb(59, 49, 49);" href="https://www.apple.com/in/legal/privacy/"><li style="border-right: 1px solid gray;">Privacy Policy &nbsp;</li></a>
-          <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);" href="https://www.apple.com/in/legal/terms/site.html"><li style="border-right: 1px solid gray;">Terms of Use &nbsp; </li></a>
-          <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);" href="https://www.apple.com/in/shop/goto/help/sales_refunds"><li style="border-right: 1px solid gray;">Sale Policy &nbsp; </li></a>
-          <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);" href="https://www.apple.com/in/legal/"><li style="border-right: 1px solid gray;">Legal &nbsp; </li></a>
-          <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);" href="https://www.apple.com/in/sitemap/"><li style="border-right: 1px solid gray;">Site Map &nbsp; </li></a>
-          <a style="text-decoration: none; padding-left: 44%;color: rgb(59, 49, 49);" href="https://www.apple.com/choose-country-region/"><li>India</li></a>
-        </ul>
-  </div>
-</div>
+                <ul style="display: inline-flex;font-size:1vw;list-style-type: none;width: 100%;">
+                    <a style="text-decoration: none; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/legal/privacy/">
+                        <li style="border-right: 1px solid gray;">Privacy Policy &nbsp;</li>
+                    </a>
+                    <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/legal/terms/site.html">
+                        <li style="border-right: 1px solid gray;">Terms of Use &nbsp; </li>
+                    </a>
+                    <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/shop/goto/help/sales_refunds">
+                        <li style="border-right: 1px solid gray;">Sale Policy &nbsp; </li>
+                    </a>
+                    <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/legal/">
+                        <li style="border-right: 1px solid gray;">Legal &nbsp; </li>
+                    </a>
+                    <a style="text-decoration: none; padding-left: 1%; color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/in/sitemap/">
+                        <li style="border-right: 1px solid gray;">Site Map &nbsp; </li>
+                    </a>
+                    <a style="text-decoration: none; padding-left: 44%;color: rgb(59, 49, 49);"
+                        href="https://www.apple.com/choose-country-region/">
+                        <li>India</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
 
 
 
@@ -942,4 +1259,5 @@
 
 
 </body>
+
 </html>
